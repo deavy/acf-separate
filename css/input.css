@@ -12,6 +12,7 @@
 }
 
 .acf-field-separation hr {
-    border-top: 1px dotted #333;
-    margin: 2em 0;
+	border:0;
+    border-top: 1px dotted #aaa;
+    margin: 4em 0 2em;
 }
