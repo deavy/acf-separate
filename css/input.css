@@ -10,3 +10,8 @@
 .acf-field-object-separation tr[data-name="wrapper"] {
     display: none !important;
 }
+
+.acf-field-separation hr {
+    border-top: 1px dotted #333;
+    margin: 2em 0;
+}
