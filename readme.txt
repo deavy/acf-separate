@@ -1,8 +1,8 @@
 === Advanced Custom Fields: Separation Field ===
 Contributors: Roman Jaster, Yay Brigade
 Tags: ACF, Helper, Layout, Usability, Organize
-Requires at least: 3.5
-Tested up to: 3.8.1
+Requires at least: 3.6.0
+Tested up to: 4.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,7 +11,9 @@ Extends ACF (Advanced Custom Fields) plugin to add a separator field for better 
 
 == Description ==
 
-EXTENDED_DESCRIPTION
+Extends ACF (Advanced Custom Fields) plugin to add a separator field for better visual clarity.
+
+You can use this field to add a horizontal rule between fields on the edit screen.
 
 = Compatibility =
 
