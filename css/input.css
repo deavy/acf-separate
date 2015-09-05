@@ -1,0 +1,12 @@
+.acf-field-separation .acf-label {
+	display: none;
+}
+
+.acf-field-object-separation tr[data-name="name"], 
+.acf-field-object-separation tr[data-name="label"], 
+.acf-field-object-separation tr[data-name="instructions"], 
+.acf-field-object-separation tr[data-name="required"], 
+.acf-field-object-separation tr[data-name="warning"], 
+.acf-field-object-separation tr[data-name="wrapper"] {
+    display: none !important;
+}
