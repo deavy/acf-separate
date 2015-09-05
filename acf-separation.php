@@ -5,8 +5,8 @@ Plugin Name: Advanced Custom Fields: Separation
 Plugin URI: https://github.com/yaybrigade/acf-separate
 GitHub Plugin URI: https://github.com/yaybrigade/acf-separate
 Description: Extends ACF (Advanced Custom Fields) plugin to add a separator field for better visual clarity.
-Version: 1.0.1
-Author: Romn Jaster, Yay Brigade
+Version: 1.0.2
+Author: Roman Jaster, Yay Brigade
 Author URI: yaybrigade.com
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

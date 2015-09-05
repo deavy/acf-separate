@@ -29,6 +29,9 @@ This ACF field type is compatible with:
 
 == Changelog ==
 
+= 1.0.2 =
+* Small Fixes
+
 = 1.0.1 =
 * CSS changes
 
