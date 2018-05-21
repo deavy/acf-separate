@@ -6,7 +6,7 @@ class acf_field_separation extends acf_field {
 	 * This function will setup the field type data
 	 *
 	 * @date    5/03/2014
-	 * @since    5.0.0
+	 * @since   5.0.0
 	 */
 	function __construct() {
 		// vars
@@ -14,9 +14,7 @@ class acf_field_separation extends acf_field {
 		$this->label    = __( 'Separation', 'acf-separation' );
 		$this->category = 'layout';
 
-		/**
-		 * defaults (array) Array of default settings which are merged into the field object. These are used later in settings
-		 */
+		// defaults (array) Array of default settings which are merged into the field object.
 		$this->defaults = array(
 			'value' => false, // prevents acf_render_fields() from attempting to load value
 		);
@@ -31,15 +29,13 @@ class acf_field_separation extends acf_field {
 		parent::__construct();
 	}
 
-
 	/**
 	 * Create extra settings for your field. These are visible when editing a field
 	 *
-	 * @since    3.6
+	 * @since   3.6
 	 * @date    23/01/13
 	 *
 	 * @param    $field (array) the $field being edited
-	 *
 	 */
 	function render_field_settings( $field ) {
 		/*
@@ -57,36 +53,37 @@ class acf_field_separation extends acf_field {
 		) );
 	}
 
-
 	/**
 	 *  Create the HTML interface for your field
 	 *
 	 * @param    $field (array) the $field being rendered
 	 *
-	 * @since    3.6
+	 * @since   3.6
 	 * @date    23/01/13
-	 *
 	 */
 	function render_field( $field ) {
 		echo '<hr />';
 	}
 
-
 	/**
 	 *  This action is called in the admin_enqueue_scripts action on the edit screen where your field is created.
 	 *  Use this action to add CSS + JavaScript to assist your render_field() action.
 	 *
-	 * @since    3.6
+	 * @since   3.6
 	 * @date    23/01/13
-	 *
 	 */
 	function input_admin_enqueue_scripts() {
-		wp_register_style( 'acf-input-separation', plugin_dir_url( __FILE__ ) . 'css/input.css' );
-		wp_enqueue_style( 'acf-input-separation' );
+		$this->register_and_enqueue_style();
 	}
 
 	function field_group_admin_enqueue_scripts() {
-		// register & include CSS
+		$this->register_and_enqueue_style();
+	}
+
+	/**
+	 * Registers and enqueues input.css
+	 */
+	private function register_and_enqueue_style() {
 		wp_register_style( 'acf-input-separation', plugin_dir_url( __FILE__ ) . 'css/input.css' );
 		wp_enqueue_style( 'acf-input-separation' );
 	}
